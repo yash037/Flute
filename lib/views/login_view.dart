@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flute/contants/routes.dart';
 import 'package:flutter/material.dart';
-import 'dart:developer' as devtools show log;
+import '../utilities/show_error_dialog.dart';
 
 
 class LoginView extends StatefulWidget {
@@ -87,6 +87,11 @@ class _LoginViewState extends State<LoginView> {
                         'Error : ${e.code}',
                         );
                     }
+                  }catch (e) {
+                    await showErrorDialog(
+                        context,
+                        e.toString(),
+                        );
                   }
                   },
                            
@@ -108,26 +113,5 @@ class _LoginViewState extends State<LoginView> {
   }
 }
 
-Future<void> showErrorDialog(
-  BuildContext context,
-  String text,
-){
-  return showDialog(
-    context: context, 
-    builder: (context){
-      return AlertDialog(title: const Text('An error occurred'),
-      content : Text(text),
-      actions: [
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          }, 
-          child: const Text('OK'),
-        )
-      ],
-      );
-  },
-  );
-}
-  
+
 
