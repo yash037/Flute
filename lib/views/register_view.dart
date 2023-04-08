@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flute/contants/routes.dart';
 import 'package:flutter/material.dart';
 import 'dart:developer' as devtools show log;
 
@@ -84,7 +85,7 @@ late final TextEditingController _email;
                         ),
                       TextButton(onPressed: () {
                          Navigator.of(context).pushNamedAndRemoveUntil(
-                          '/login/', 
+                          loginRoute, 
                             (route) => false,
                             );
                       }, child: const Text('Already Registered? Login Here!',
