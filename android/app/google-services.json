@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "275146427613",
+    "project_id": "flute101",
+    "storage_bucket": "flute101.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275146427613:android:8fefc06c23836b93569f34",
+        "android_client_info": {
+          "package_name": "com.example.flute"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275146427613-h8ijgbfdf8jqpsvq1m9nencf1jfgeffv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVkl2Jd0MXbSuf-7NWquSHJj3brlCEZfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275146427613-h8ijgbfdf8jqpsvq1m9nencf1jfgeffv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "275146427613-9b01h6ugh7vrm810okt7hjkva1k9mho3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flute"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
