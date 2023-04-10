@@ -6,6 +6,7 @@ import 'package:flute/views/register_view.dart';
 import 'package:flute/views/verify_email.dart';
 import 'package:flutter/material.dart';
 
+
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
